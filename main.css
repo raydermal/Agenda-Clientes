@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    background-color: #960ff0;
+    border: 2px solid #960ff0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 6px 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+header img {
+    height: 150px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+form .nome-cliente label {
+    display: flex;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+form .telefone-cliente label {
+    display: flex;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 7px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+form .bnt {
+    background-color: rgb(101, 28, 170);
+    color: azure;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .bnt:hover {
+    background-color: rgb(105, 137, 207);
+}
+
+
+table {
+    width: 100%;
+}
+
+table th {
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    
+}
+
+table td {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.container {
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+   
+}
+
+
+@media screen and (max-width: 600px){
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input {
+        flex-direction: column;
+    }
+  
+    header h1 {
+        color: #960ff0;
+    }
+
+    
+
+    .telefone-cliente {
+        
+        align-items: center;
+        justify-content: center;
+        margin-left: 35px;
+        flex-direction: column;
+    }
+
+    .nome-cliente {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 35px;
+        
+    }
+
+    .bnt {
+        align-items: center;
+        justify-content: center;
+        margin-left: 45px;
+        height: 45px;
+       
+    }
+
+ 
+    
+    
+   
+    
+    
+}
+
+
